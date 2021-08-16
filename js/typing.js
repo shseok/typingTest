@@ -61,6 +61,7 @@ const run = () => {
     timeInterval = setInterval(countDown, 1000); // when button is clicked
     checkInterval = setInterval(checkStatus, 50);
     buttonChange('게임중');
+    setInterval(createHeart, 300);
 }
 
 const countDown = () => {
@@ -103,6 +104,22 @@ const runNotification = (type) =>{
     }
 
     Toastify(option).showToast();
+}
+
+const createHeart = () => {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+
+    heart.style.left = Math.random() * 200 + "vh";
+    heart.innerText = '💧' //⚡💲❄
+    // heart.innerText = words[Math.random() * 5];
+    heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 4000);
 }
 
 init();
