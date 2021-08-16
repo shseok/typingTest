@@ -42,3 +42,11 @@ https://random-word-api.herokuapp.com/home
 axios (Using jsDelivr CDN)
 
 https://github.com/axios/axios
+
+tostify-js
+
+https://www.jsdelivr.com/package/npm/toastify-js
+
+color
+
+https://www.w3schools.com/colors/colors_mixer.asp
