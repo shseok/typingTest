@@ -33,6 +33,8 @@
 
 ## 주의사항
 
+- ?
+
 ## 도움받은 사이트(ref)
 
 random word api
