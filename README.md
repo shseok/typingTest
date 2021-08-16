@@ -8,12 +8,12 @@
 - 주어진 단어를 제대로 작성시 점수 증가
 - 단어를 제대로 타이핑했을 때, 랜덤한 단어가 주어짐
 - 시간안에 단어를 입력하지 못했을 때, 게임 재시작 (점수초기화)
+- 토스트(toast) 기능
 
 ## 실행방법
 
 ## 개선사항
 
-- 토스트 기능 (문제를 맞췄을 때) 추가하기
 - enter key input 기능 추가
 - 이전에 맞췄던 점수들 보기 (오른쪽에 하단부터 쌓아놓는 기능)
 
@@ -43,7 +43,7 @@ axios (Using jsDelivr CDN)
 
 https://github.com/axios/axios
 
-tostify-js
+toastify-js
 
 https://www.jsdelivr.com/package/npm/toastify-js
 
