@@ -61,7 +61,7 @@ const run = () => {
     timeInterval = setInterval(countDown, 1000); // when button is clicked
     checkInterval = setInterval(checkStatus, 50);
     buttonChange('게임중');
-    setInterval(createHeart, 300);
+    setInterval(createRain, 300);
 }
 
 const countDown = () => {
@@ -106,7 +106,7 @@ const runNotification = (type) =>{
     Toastify(option).showToast();
 }
 
-const createHeart = () => {
+const createRain = () => {
     const heart = document.createElement('div');
     heart.classList.add('heart');
 

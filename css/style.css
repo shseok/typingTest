@@ -12,6 +12,7 @@ body {
   justify-content: center;
   margin: 0;
   min-height: 50vh;
+  transition: background 0.3s linear, color 0.3s linear;
 }
 
 .body {
@@ -97,4 +98,44 @@ body {
   to {
     transform: translateY(105vh);
   }
+}
+
+.toggle-container {
+  position: fixed;
+  top: 100px;
+  right: 10px;
+}
+
+label {
+  background: #1f1f1f;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s linear;
+}
+
+#toggle {
+  visibility: hidden;
+}
+
+body.dark {
+  background: #1f1f1f;
+  color: #fff;
+}
+
+body.dark label {
+  background: #fff;
+}
+
+body.dark .button {
+  background: #fff;
+  color: #1f1f1f;
+  font-weight: bolder;
+}
+
+body.dark .word-display {
+  color: #fff;
 }
