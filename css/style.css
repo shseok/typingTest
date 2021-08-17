@@ -83,7 +83,6 @@ body {
   top: 0;
   right: 0;
   height: 100%;
-  /* border: 1px solid red; */
 }
 
 .heart {
@@ -109,12 +108,21 @@ body {
 label {
   background: #1f1f1f;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   display: inline-block;
   cursor: pointer;
+  color: #fff;
   user-select: none;
   transition: background 0.3s linear;
+}
+
+.identification {
+  position: fixed;
+  right: 19px;
+  cursor: default;
+  font-weight: bolder;
+  top: 147px;
 }
 
 #toggle {

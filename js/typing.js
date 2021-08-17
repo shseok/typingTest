@@ -14,7 +14,8 @@ const wordInput = document.querySelector(".word-input");
 const scoreDisplay = document.querySelector(".score");
 const timeDisplay = document.querySelector(".time");
 const button = document.querySelector(".button");
-
+const toggle = document.getElementById('toggle');
+const modeName = document.querySelector('.identification');
 
 const buttonChange = (text) => {
     button.innerText = text;
@@ -121,5 +122,17 @@ const createRain = () => {
         heart.remove();
     }, 4000);
 }
+
+toggle.addEventListener('change', (e) => {
+    document.body.classList.toggle('dark', e.target.checked);
+    if (document.body.classList.value === 'dark') {
+        modeName.style.right = "15px";
+        modeName.innerText = "white"
+    } else {
+        modeName.style.right = "19px";
+        modeName.innerText = "dark"
+    }
+        
+})
 
 init();
